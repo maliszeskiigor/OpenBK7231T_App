@@ -53,6 +53,14 @@ static driver_t g_drivers[] = {
 	//drvdetail:"requires":""}
 	{ "Freeze",		Freeze_Init,			Freeze_OnEverySecond,			NULL, Freeze_RunFrame, NULL, NULL, NULL, false },
 #endif
+#ifdef ENABLE_DRIVER_HTTP
+extern void HTTP_Init();
+{ "http", HTTP_Init, NULL },
+#endif
+#ifdef ENABLE_DRIVER_PING_WATCHDOG
+extern void PingWatchDog_Init();
+{ "PingWatchDog", PingWatchDog_Init, NULL },
+#endif
 #if ENABLE_DRIVER_PIR
 	//drvdetail:{"name":"PIR",
 	//drvdetail:"title":"TODO",
