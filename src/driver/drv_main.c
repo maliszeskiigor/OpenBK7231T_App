@@ -55,11 +55,11 @@ static driver_t g_drivers[] = {
 #endif
 #ifdef ENABLE_DRIVER_HTTP
 extern void HTTP_Init();
-{ "http", HTTP_Init, NULL },
+{ "http", HTTP_Init, NULL, NULL, NULL, NULL, NULL, NULL, false },
 #endif
 #ifdef ENABLE_DRIVER_PING_WATCHDOG
 extern void PingWatchDog_Init();
-{ "PingWatchDog", PingWatchDog_Init, NULL },
+{ "PingWatchDog", PingWatchDog_Init, NULL, NULL, NULL, NULL, NULL, NULL, false },
 #endif
 #if ENABLE_DRIVER_PIR
 	//drvdetail:{"name":"PIR",
