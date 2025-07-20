@@ -13,6 +13,8 @@
 #define OBK_VARIANT_ESP2M			1
 #define OBK_VARIANT_ESP4M			2
 #define OBK_VARIANT_ESP2M_BERRY		3
+#define ENABLE_DRIVER_HTTP
+#define ENABLE_DRIVER_PING_WATCHDOG
 
 // Starts with all driver flags undefined
 
